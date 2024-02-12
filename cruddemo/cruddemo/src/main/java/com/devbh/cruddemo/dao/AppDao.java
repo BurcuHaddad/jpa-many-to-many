@@ -3,6 +3,7 @@ package com.devbh.cruddemo.dao;
 import com.devbh.cruddemo.entity.Course;
 import com.devbh.cruddemo.entity.Instructor;
 import com.devbh.cruddemo.entity.InstructorDetail;
+import com.devbh.cruddemo.entity.Student;
 
 import java.util.List;
 
@@ -20,6 +21,11 @@ public interface AppDao {
     void deleteCourseById(int theId);
     void save(Course theCourse);
     Course findCourseAndReviewsByCourseId(int theId);
+    Course findCourseAndStudentsByCourseId(int theId);
+    Student findStudentAndCoursesByStudentId(int theId);
+    void update(Student tempStudent);
+    void deleteStudentById(int theId);
+
 
 }
 
